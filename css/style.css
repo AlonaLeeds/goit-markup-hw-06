@@ -1147,7 +1147,7 @@ footer {
   justify-content: center;
 
   fill: #2e2f42;
-  background-color: #e7e9fc;
+  background-color: rgba(231, 233, 252, 0.1);
 
   /* color: #E7E9FC; */
 }
@@ -1192,5 +1192,4 @@ footer {
   justify-content: space-between;
   gap: 40px;
 }
-.footer-social-list {
-}
+
