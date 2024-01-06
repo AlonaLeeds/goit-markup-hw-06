@@ -40,7 +40,7 @@ body {
 /* common styles */
 .container {
   /* phones */
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 16px 0 16px;
 }
@@ -268,7 +268,7 @@ img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  max-width: 320px;
+  max-width: 100%;
   margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
@@ -428,6 +428,7 @@ font-weight: 700;
 line-height: 1.11; /* 111.111% */
 letter-spacing: 0.02em;
 text-transform: capitalize;
+margin-bottom: 8px;
 }
 @media screen and (min-width: 768px){
   .main-page{
@@ -488,6 +489,10 @@ text-transform: capitalize;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    margin-bottom: 72px;
+}
+.our-team-list:last-child {
+margin-bottom: 96px;
 }
 @media screen and (min-width: 768px) {
   .our-team-list {
@@ -514,9 +519,7 @@ text-transform: capitalize;
   color: #2e2f42;
   font-weight: 500;
 }
-.description {
-  margin-bottom: 8px;
-}
+
 .social {
   display: flex;
   justify-content: center;
@@ -569,6 +572,7 @@ text-transform: capitalize;
 .our-portfolio-list {
   width: 100%;
   flex-shrink: 0;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 @media screen and (min-width: 768px) {
   .our-portfolio-list {
@@ -615,7 +619,17 @@ text-transform: capitalize;
 .our-portfolio-list {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-portfolio-list > h3,
+.our-portfolio-list .main-page {
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.2; /* 120% */
+letter-spacing: 0.4px;
+text-align: left;
+}
+
+
 .our-portfolio-list > p {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -890,7 +904,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  max-width: 288px;
+  /* max-width: 288px; */
   width: calc(100% - 32px);
   min-height: 584px;
   background: #fcfcfc;
@@ -1040,7 +1054,8 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: block; /*changed*/
+  display: flex; 
+  align-items: center;
 }
 
 .label-checkbox-span {
