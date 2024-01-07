@@ -112,6 +112,7 @@ img {
 
 .description {
   font-size: 16px;
+  margin-bottom: 8px;
 }
 
 /* header */
@@ -495,6 +496,9 @@ button:focus {
   .our-team-list {
     max-width: 264px;
     width: calc((100% - 24px * 1) / 2);
+  }
+  .our-team-list:last-child {
+    margin-bottom: 72px;
   }
 }
 @media screen and (min-width: 1158px) {
