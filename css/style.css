@@ -121,7 +121,12 @@ img {
   }
 }
 
-
+.member .description {
+  font-weight: 400;
+}
+.app-description .description {
+  font-weight: 400
+}
 /* header */
 .main-header {
   display: flex;
