@@ -111,9 +111,16 @@ img {
 }
 
 .description {
+  font-weight: 500;
   font-size: 16px;
   margin-bottom: 8px;
 }
+@media screen and (min-width: 1158px){
+  .description {
+    font-weight: 400;
+  }
+}
+
 
 /* header */
 .main-header {
